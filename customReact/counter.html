@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1 id="content">Counter</h1>
+  <input id="counter" type="number" placeholder="your ui will update here"/>
+  <br/>
+  <button id="add">Add</button>
+  <br/>
+  <button id="sub">Subtract</button>
+  
+  
+</body>
+<script>
+  const counter=document.getElementById('counter');
+  let count=0// initialize count to keep track 
+  document.getElementById('add').addEventListener('click',function(e){
+    e.preventDefault;
+    count+=1;
+    counter.value=count;
+  
+  })
+  document.getElementById('sub').addEventListener('click',function(e){
+    e.preventDefault()
+    count-=1;
+    counter.value=count;
+  })
+</script>
+</html>
